@@ -1,0 +1,334 @@
+<html><head><title>PSN-ADC24 Analog to Digital Board</title></head>
+<body BACKGROUND="backgnd.jpg">
+<center><h2><a name="Top"></a>PSN-ADC24 4-Channel 24-Bit Analog to Digital Board</h2>
+<p>Last Updated: 05/19/2015</p>
+<hr>
+<p><img border="0" src="adc24.JPG" width="600" height="518"></p>
+<p>&nbsp;</p>
+<h3>Block Diagram</h3>
+<p><img border="0" src="adc24block.gif" width="650" height="460"></p>
+<p>
+</center>
+<h2 align="left">Description:
+</h2>
+<blockquote>
+  <p align="left">The PSN-ADC24 is a 4-Channel 24-Bit Delta-Sigma Analog to Digital Converter
+  specially designed for seismic monitoring and other low frequency data
+  collection. Each channel is digitized
+  using a 24-Bit Delta-Sigma Analog to Digital Converter (Note 1) manufactured
+  by Cirrus Logic. The datasheet for the Cirrus Logic CS5532 ADC chip can be viewed <a href="http://www.cirrus.com/en/pubs/proDatasheet/CS5532-34-BS_F3.pdf">here</a>.
+  Supported sample rate are: 15, 25, 30, 50, 60, 100, 120 and 200SPS.
+</p>
+  <p align="left">The PSN-ADC24 board supports both USB and RS-232 Comm Port
+  interfaces. A GPS receiver can be connected to the board for
+  accurate time stamping of the ADC data.&nbsp;
+</p>
+</blockquote>
+<h2 align="left">Applications:
+</h2>
+<blockquote>
+  <ul>
+      <li>Earthquake Detection and Location</li>
+      <li>Seismic Studies</li>
+      <li>Structural Testing</li>
+      <li>Vibration Monitoring</li>
+  </ul>
+</blockquote>
+<h2 align="left">Features:
+</h2>
+<blockquote>
+  <ul>
+    <li>Dynamic Range: &gt; 115dB at 100 Samples Per Second</li>
+    <li>Wide Input Power Range: 7 to 28VDC</li>
+    <li>Low Power Operation: &lt; 1 watt with Garmin GPS18x Receiver</li>
+    <li>ADC Programmable Gain Range: 1, 2, 4, 8, 16, 32 and 64</li>
+    <li>RS-232 and USB Interface</li>
+  </ul>
+</blockquote>
+<h2 align="left">Specifications:</h2>
+<blockquote>
+  <ul>
+    <li>Analog Inputs: 4</li>
+    <li>Resolution: 20 Bits at 100 Samples Per Second&nbsp;</li>
+    <li>A/D Converter Chip: Cirrus Logic CS5532</li>
+    <li>Convert Type: 24-Bit Delta-Sigma</li>
+    <li>Sample Rates: 15, 25, 30, 50, 60, 100, 120 and 200SPS</li>
+    <li>GPS Support: Garmin GPS 18x LVC or Sure Electronic MG1613S</li>
+    <li>Timing Accuracy with GPS Receiver: &lt; 2 Milliseconds</li>
+    <li>Board Size:&nbsp; 5.5 x 5.0 inches or 13.97 x 12.7 cm</li>
+  </ul>
+</blockquote>
+<h2>Cost:</h2>
+<blockquote>
+<ul>
+  <li>PSN-ADC24 without Power Supply - <b>$260.00</b></li>
+  <li><a href="../gps/gps18.html">Garmin GPS 18 Timing Receiver</a> - <b>$85.00</b></li>
+  <li>Power Supply Options:
+    <ul>
+      <li><a href="ps110.jpg">110 VAC 60 Hz Wall Mounted Power Supply</a> - <b>$10.00</b></li>
+      <li><a href="ps110-220.jpg">Universal 110 VAC to 220 VAC 50 / 60 Hz Power
+        Supply</a> with one Adapter Plug - <b>$25.00</b></li>
+    </ul>
+  </li>
+  <li>6 Foot (1.83m) 9-Pin Male / Female RS-232 Cable - <b>$5.00</b></li>
+  <li>50 Foot (15.24m) 9-Pin Male / Female RS-232 Cable - <b>$20.00</b></li>
+  <li>Enclosure - <b>$50.00</b></li>
+</ul>
+</blockquote>
+  <h2 align="left"><a name="Power">Power</a> Requirements:
+</h2>
+<blockquote>
+  <p align="left">The PSN-ADC24 digitizer board can operate on a wide input voltage
+  range. The minimum input voltage is ~7.5VDC and the maximum ~28VDC. A diode on
+  the board is used to prevent damage to the board if the input power is <span class="st">reversed.
+  The table below list the power requirements in milliamps with and without the
+  Garmin GPS 18x receiver connected to the sensor board.</span>
+</p>
+</blockquote>
+<blockquote><blockquote>
+<table border="1" width="28%">
+  <tr>
+    <td width="44%" align="center">Input Voltage</td>
+    <td width="31%" align="center">&nbsp;No GPS</td>
+    <td width="25%" align="center">W/GPS</td>
+  </tr>
+  <tr>
+    <td width="44%" align="center">7.50VDC</td>
+    <td width="31%" align="center">&nbsp;78ma</td>
+    <td width="25%" align="center">118ma</td>
+  </tr>
+  <tr>
+    <td width="44%" align="center">12.0VDC</td>
+    <td width="31%" align="center">&nbsp;50ma</td>
+    <td width="25%" align="center">73ma</td>
+  </tr>
+  <tr>
+    <td width="44%" align="center">18.0VDC</td>
+    <td width="31%" align="center">&nbsp;30ma</td>
+    <td width="25%" align="center">48ma</td>
+  </tr>
+  <tr>
+    <td width="44%" align="center">24.0VDC</td>
+    <td width="31%" align="center">&nbsp;28ma</td>
+    <td width="25%" align="center">40ma</td>
+  </tr>
+</table>
+</blockquote></blockquote>
+  <h2 align="left">Software:
+</h2>
+<blockquote>
+  <p><a href="../winsdr/index.html">WinSDR</a> (<a href="../winsdr/winsdr4x.html">Download</a>)
+  can be used to record data using the PSN-ADC24 digitizer board.&nbsp; This
+  program is included with the purchase of the board.&nbsp; WinSDR will run on
+  Windows XP, VISTA and Win7. Both 32-Bit and 64-Bit version of the program are available.&nbsp;</p>
+  <p>This <a href="../PSNADBoard.html">Windows DLL Driver and Linux Library</a> can be used by programmers who
+  would like to write their own datalogger program or add the sensor board to an
+  existing program.&nbsp; The <a href="/software/PSNAdBoardV57_win.zip">DLL Driver
+  zip file</a> or <a href="/software/PSNAdBoardV52_Lin.zip">Linux Library</a>
+  includes an example, written in VC++ 8.0, showing how to use the
+  PSNADBoard.DLL file.</p>
+  <p><a href="http://folkworm.ceri.memphis.edu/ew-doc/">Earthworm</a>, a powerful seismic software package 
+  that can run under various operating systems, can receive data using the
+  PSN-ADC24 board or WinSDR. 
+  See this <a href="../software.html#Earthworm">link</a> for more information.</p>
+</blockquote>
+<h2>Input Channels:</h2>
+<blockquote>
+  <p>This channel has a differential input with a input voltage range of +-2.5V
+  or 5V Peak-to-peak when the Programmable
+      Gain Instrument Amplifier gain set to 1. With the gain set to 64, the
+  maximum PGIA gain, the input voltage range is +- 39 millivolts. A differential
+  voltage divider can be placed on the board to allow for larger input voltage
+  swings. See schematic below. R2 can be used as a damping resistor for the
+  sensor or used as one leg of the voltage divider.</p>
+  <p>The user should use shielded 2 conductor wire when connecting a senor like
+  a Geophone to the input. The + output of the sensor should connect to the screw
+  terminal, or Molex connector pin, 2 and the - output to terminal 1. The shielded part of the wire
+  should be connected to terminal 3. At the other end of the wire the shield can
+  be left open or connected to the metal case of the sensor. Before connecting
+  the shield to the case of the sensor the should check with a Digital Volt
+  Meter to make sure there is no resistance between the case and one of the
+  output coil terminals. If the sensor is going to set right next to the
+  PSN-ADC24 board the user can use a short run of twisted pair wire without the
+  shield. Just leave the ground screw terminal 3 disconnected and only connect
+  terminals 1 and 2 to the sensor's output coil.&nbsp;</p>
+  <p>&nbsp;If the user is going to drive the input with something other then a
+  coil the put terminals must be biased at +2.5V and swing up to 5V and down to
+  ground. Since the input is differential one terminal needs to be going +V
+  while the other -V.</p>
+</blockquote>
+<p align="center"><b>+/-2.5 Volt Input Schematic</b></p>
+<p align="center"><img border="0" src="chan_sch.png" width="582" height="343"></p>
+<p align="center"><b>Maximum Input Voltage Range with PGIA Gain = 1</b></p>
+<p align="center"><img border="0" src="inputrange.jpg" width="400" height="207"></p>
+<hr>
+<h2 align="center">+/- 10 Volt Input Option</h2>
+<blockquote>
+<p align="left">Each channel can be configured to except a +/-10 Volt input
+signal. This option can be used with sensors that output a ground referenced
+differential signal. In this configuration the value of the two CF low-pass
+filter capacitors C9 and C4 are lowered to .1uf. This is needed to keep the same
+low-pass cutoff frequency of 45Hz do to the larger series resistors R15 and
+R6.&nbsp;The Programmable Gain Amplifier on the A/D chip must be set to 2 or
+higher when using this option.&nbsp;Using the 2.2k and 35.2k resistor divider
+values the measured input range for full scale A/D counts was measured at
++-10.63v or a divide by factor of 8.51. WinSDR users should use 0.11751 (1/8.51)
+in the Channel Settings / Sensor Information / Amp Gain field to compensate for
+the voltage divider.</p>
+<p align="left">&nbsp;</p>
+</blockquote>
+<p align="center"><img border="0" src="diffInput.jpg" width="637" height="261"></p>
+<hr>
+<h2 align="center"><img border="0" src="adc24front.jpg" width="800" height="345"></h2>
+<h2>Input/Output Connector Information:</h2>
+<blockquote>
+  <h4>Input Connectors CH1 to CH4:</h4>
+  <blockquote>
+    <p>The input connector for each channel can be either a&nbsp; three terminal screw
+    block or three pin Molex .156&quot; (3.94mm) connector (See photo below).
+    Please specify the input connector type when ordering. If you order the
+    board with the Molex connector we will include the mating connector housing
+    (Molex PN 26-60-4030) and crimp terminals.&nbsp;</p>
+    <p align="center"><img border="0" src="molex.jpg" width="500" height="231"></p>
+    <p>While looking at the top of the board with J1 to your
+    left the connector pinout is as follows:</p>
+    <ul>
+      <li>Left-Hand screw terminal or Molex pin 1 = -IN</li>
+      <li>Center screw terminal or pin 2 = +IN</li>
+      <li>Right-Hand screw terminal or pin 3 = Ground&nbsp;</li>
+    </ul>
+  </blockquote>
+  <h4>Power Supply Connector J2:</h4>
+  <blockquote>
+    <p>The power connector on the board is a standard 2.1mm X 5.5mm male jack. <b>Positive
+    voltage must be applied to the center pin</b>. A diode on the board will
+    prevent damage if the power is reversed. The DC input range is 7.5 volts to
+    28 volts. See <a href="#Power">power requirements</a> above for more
+    information.</p>
+  </blockquote>
+  <h4>GPS Comm Connector J3:</h4>
+  <blockquote>
+    <p>This connector is a 9 pin, DB-9 male connector used to communicate to a
+    GPS receiver. A straight through serial cable should be used between the A/D
+    board and the GPS's receiver interface board. See this page for a <a href="../gps/index.html">GPS
+    timing system</a> compatible with the PSN-ADC24 board. The connector has the
+    following pinout:</p>
+    <ul>
+      <li>Pin 1 - CD (Carrier Detect) Input, Used for the 1 PPS signal from the
+        GPS receiver</li>
+      <li>Pin 2 - Receiver Data Input from the GPS Receiver</li>
+      <li>Pin 3 - Transmit Data Output to the GPS Receiver</li>
+      <li>Pin 4 - +5 VDC for Garmin GPS 16/18 Power</li>
+      <li>Pin 5 - Ground</li>
+      <li>Pin 7 - Ground for Garmin GPS 16</li>
+      <li>Pins 6, 8 and 9 - Not Connected</li>
+    </ul>
+  </blockquote>
+  <h4>Comm Connector J4:</h4>
+  <blockquote>
+    <p>This connector is a 9 pin DB-9 female connector used to communicate to
+    the PC running WinSDR. A straight through serial cable should be used
+    between the A/D board and the your computer. The connector has the following
+    pinout:</p>
+    <ul>
+      <li>Pin 1 - Not Connected</li>
+      <li>Pin 2 - Transmit Data Output</li>
+      <li>Pin 3 - Receive Data Input</li>
+      <li>Pin 4 - DTR (Data Terminal Ready) Input - CPU Reset Line</li>
+      <li>Pin 5 - Ground</li>
+      <li>Pin 6 - Not Connected</li>
+      <li>Pin 7 - Not Connected</li>
+      <li>Pin 8 - Not Connected</li>
+      <li>Pin 9 - Not Connected or +5VDC. See JP1 information below.</li>
+    </ul>
+    <p>The DTR line ( Pin 4 ) is used to reset the CPU on the A/D board. This
+    line should be below 2 VDC for normal operation. If the LED on the board
+    does not come on, it may be do to this line holding the CPU in the reset
+    state. Position 4 of Switch SW1 can be used to disable this feature. If
+    disabled, off position, the host computer can not reset the CPU on the A/D
+    board.&nbsp;<i>When using the RS-232 interface SW1 switch position 5 must be
+    turned on and switch position 6 must be turned off.&nbsp;&nbsp;</i></p>
+  </blockquote>
+  <h4>USB Interface J5:</h4>
+  <blockquote>
+    <p>This USB Type B connector is used to communicate with the PC. The USB
+    interface chip used on the A/D board is a <a href="http://www.ftdichip.com/">FTDI</a>
+    FT232RL. Windows or Linux drivers (32-Bit or 64-Bit) can be downloaded from <a href="http://www.ftdichip.com/Drivers/VCP.htm">here</a>.&nbsp;<i>When
+    using the USB interface SW1 switch position 6 must be turned on and switch
+    position 5 must be turned off.&nbsp;&nbsp;</i></p>
+  </blockquote>
+</blockquote>
+<blockquote>
+  <h4 align="left">Jumper JP1:</h4>
+  <blockquote>
+    <p align="left">The board has one jumper located near Comm Port connector
+    J4. If the jumper is installed +5VDC will be applied to pin 9 of the Comm
+    Port connector. If left off pin 9 will be floating or non connected. The
+    +5VDC can use used to power an external device like a wireless RS-232 to
+    WIFI adapter or wired RS-232 to Ethernet bridge.</p>
+  </blockquote>
+</blockquote>
+<hr>
+<blockquote>
+  <h2 align="left">Switch SW1 Settings:</h2>
+  <blockquote>
+    <p align="left">The switch SW1 has 6 positions. They are used to control the
+    baud rate, CPU reset and what interface, USB or RS-232, to use.&nbsp;</p>
+    <blockquote>
+      <p align="left">Switch 1 and 2: Controls the baud rate. See table below.</p>
+      <p align="left">Switch 3: Currently not used.</p>
+      <p align="left">Switch 4: If turned on the host computed can reset the CPU
+      on the ADC board using the DTR line.</p>
+      <p align="left">Switch 5: USB Interface Mode. Switch 6 must be turned
+      off.</p>
+      <p align="left">Switch 6:&nbsp; RS-232 Interface Mode.&nbsp; Switch 5 must be turned off.</p>
+      <p align="center">Baud Rate Table</p>
+		<center>
+      <table border="1" width="233" height="51">
+        <tr>
+          <td width="117" height="51" align="center">SW1</td>
+          <td width="116" height="51" align="center">SW2</td>
+          <td width="116" height="51" align="center">Rate</td>
+        </tr>
+        <tr>
+          <td width="117" height="51" align="center">Off</td>
+          <td width="116" height="51" align="center">Off</td>
+          <td width="116" height="51" align="center">9600</td>
+        </tr>
+        <tr>
+          <td width="117" height="51" align="center">On</td>
+          <td width="116" height="51" align="center">Off</td>
+          <td width="116" height="51" align="center">19200</td>
+        </tr>
+        <tr>
+          <td width="117" height="51" align="center">Off</td>
+          <td width="116" height="51" align="center">On</td>
+          <td width="116" height="51" align="center">38400</td>
+        </tr>
+        <tr>
+          <td width="117" height="51" align="center">On</td>
+          <td width="116" height="51" align="center">On</td>
+          <td width="116" height="51" align="center">57600</td>
+        </tr>
+      </table>
+		</center>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<hr>
+<p align="center">Notes:</p>
+<blockquote>
+  <ol>
+    <li>Usable ADC bits dependent on sample rate and on-chip Programmable Gain Instrument Amplifier (PGIA) gain setting.</li>
+  </ol>
+</blockquote>
+<hr>
+<p align="left">
+<center>
+This page viewed <img src="http:/cgi-bin/pagecounter?psnadc24.html"> times since August 18, 2013
+</p>
+<hr>
+<p align="center"><font size="3">[ <a HREF="#top">Top</a>  ][ <a HREF="../index.html#Equipment">Equipment</a> ] 
+[ <a href="../index.html">Home</a> ] [ <a HREF="../HowToOrder.html">How to Order</a> ]</font></p>
+<a HREF="http://www.seismicnet.com/contact.html"><b>Contact Information</b></a></center>
+</body></html>

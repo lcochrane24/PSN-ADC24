@@ -1,0 +1,72 @@
+BOM for PSN-ADC24 Board
+
+Part Type,  Designator, 	Description     Package	    	Supplier(s)	                Notes
+											LS = Lead Spacing in MM
+Diodes
+1N5819	    D1, D2, D4, D6	SCHOTTKY DIODE	DO-41	  	Jameco or Digi-Key
+KV3901	    D3                  VAR CAP DIODE	DO-41	        eBay	       		Might be an obsolete part
+LED	    D5			RED PCB LED	LS=2.5		Jameco PN 104248
+ 
+Resistors
+1K	    R30			1% MF 1/4W      axial0.4   	Digi-Key	
+10K	    R17, R31		1% MF 1/4W      axial0.4   	Digi-Key
+4.7K	    R7                  1% MF 1/4W      axial0.4   	Digi-Key
+1.0M	    R29                 1% MF 1/4W      axial0.4	Digi-Key
+1.0M	    R3, R5, R18, R27    1% MF 1/4W      axial0.4     	Digi-Key		DR3 Damping Resistor
+2.2 OHM     R24			5% Carbon 1/4W  axial0.4	Jameco or Digi-Key	Jumper can be used here
+33K	    R28			1% MF 1/4W      axial0.4     	Digi-Key
+200K	    R9,  R14, R16, R21  1% MF 1/4W      axial0.4	Digi-Key		Bias Resistor
+5.1K	    R4,  R8,  R10, R11  1% MF 1/4W      axial0.4	Digi-Key		RF Input LP Filter Resistor
+5.1K	    R12, R13, R22, R23  1% MF 1/4W      axial0.4	Digi-Key		RF Input LP Filter Resistor
+Not Used    R50, R51            1% MF 1/4W      axial0.4
+
+10K X 5,    RP1, RP2		SIP6 5RES ARRAY LS=2.5x6	Digi-Key PN 770-61-R10KP
+
+Coils
+6.8UH	    L1, L2	        PWR FILTER COIL axial0.5	Digi-Key PN DN7691-ND   Can also use 3.3UH 
+173UH	    L3			PWR COIL 540MA			Digi-Key PN TE2176-ND or TE2178-ND
+
+Capacitors
+0.1UF/50V   C1,  C2,   C4, C6	CAP CERAMIC	RAD0.1		Digi-Key PN 478-3192-ND
+0.1UF/50V   C10, C13, C18, C23, 50V 20% Radial
+0.1UF/50V   C26, C33, C36, C37, 
+0.1UF/50V   C39, C40, C41, C43, 
+0.1UF/50V   C49, C50
+0.022UF/50V C8, C12, C21, C31   5% FILM CAP    	RAD0.2		Digi-Key PN P4517-ND    Panasonic ECQ-V1H223JL
+1.0UF/25V,  C20, C22, C28, C30	TANTALUM	RAD0.1	  	Jameco PN 545588
+1.0UF/25V   C34, C35
+220PF/500V  C44			SILVER MICA 	LS=5.9		Digi-Key PN 338-1046-ND CDE CD15FD221JO3 
+10UF/20V    C27			TANTALUM 10%    LS=2.5		Jameco PN 545633
+100UF/50V"  C47			ALUM 20% FC CAP LS=5.0		Digi-Key PN P10323-ND	Panasonic EEU-FC1H101		
+68UF/35V    C3,  C5,  C24, C42	ALUM 20% FC CAP LS=2.5		Digi-Key PN P10292-ND   Panasonic EEU-FC1V680
+68UF/35V    C38, C45, C48 
+TRIM CAP    C46		        VAR CAP 9PF-50PF LS=5.0		Jameco PN 136979	
+.68UF/63V   C9,  C14, C15, C16	FILM 5% RADIAL	LS=5.0		Digi-Key PN 399-6030-ND Kemet R82DC3680AA60J
+.68UF/63V   C17, C19, C25, C32
+
+Crystal
+4.9152MHZ   Y1			20PF	        HC49/US		Digi-Key PN X1049-ND 
+
+Switch
+6-POS DIP   SW1			SLIDE DIP SWITCH 12-PIN		Jameco PN 38826
+
+IC Chips
+CS5532ASZ   U1, U2, U3, U4	CIRRUS ADC CHIP	SOP20		Digi-Key PN 598-1112-5-ND 
+74HC14	    U10			HEX INVERTER    DIP14		Digi-Key or Jameco
+DS14C89	    U8			RS-232 RECV     DIP14		Digi-Key PN DS14C89AN/NOPB-ND
+MAX232	    U5			RS-232 TX/RX    DIP16		Digi-Key or Jameco
+DSPic30F3014 U9			MicoChip CPU    DIP40		Digi-Key PN DSPIC30F301430/P-ND 
+SOCKET FOR  U9			40PIN SOCKET	DIP40		Digi-Key or Jameco
+FT232RL	    U6			USB INTERFACE   SOP28		Digi-Key PN 768-1007-1-ND
+LT1019-2.5  U7			2.5V REF IC     DIP8		Digi-Key PN LT1019CN8-2.5#PBF-ND
+LM2594-5    U11			IC REG BUCK 5V	DIP8		Digi-Key PN LM2594N-5.0/NOPB-ND 
+
+Connectors
+PWR CON     J2			2.1MM DC PWR JACK		Jameco PN 137673
+DB9M        J3			DB9 MALE RT    .318		Jameco PN 104943
+DB9F        J4			DB9 FEMALE RT  .318		Jameco PN 104952
+USB Type B  J5			USB CONN			Jameco PN 230958 or 2096245 
+
+INPUT CONN  TSB1,TSB2,TSB3,TSB4 3-TERMINAL SCREW BLOCK		Jameco PN 161059
+				or 3 POS 3.96 (.156) MOLEX	
+				HEADER 				Jameco PN 879887

@@ -1,0 +1,11 @@
+This folder contains the souce code needed to compile the firmware running on the microcontroller. To compile
+the code you will need the Microchip MPLAB C30 Compiler. This is the version of the compiler I am using:
+
+gcc version 4.0.3 (dsPIC30, Microchip v3_02) Build date: Nov  9 2007
+
+Once the code is compiled you can use the DspBoot.exe program to load the firmware onto the microcontroller.
+Before you can do this you will need to flash the bootloader onto the chip using a programmer that can
+flash Microchips's DSPIC microcontrollers. The folder hexfiles contains the bootloader hex file as well
+as version 2.5 of the board firmware.
+
+The sub-folder Bootloader contains the asm code of the bootloader.

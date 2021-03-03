@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------
+NC Drill File Report For :  D:\PROTEL\projects\SdrAdcMl\Sdr24Adc17.pcb   7-Oct-2015   19:18:57
+---------------------------------------------------------------------------
+
+
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII File : D:\PROTEL\projects\SdrAdcMl\Sdr24Adc17.TXT
+EIA File   : D:\PROTEL\projects\SdrAdcMl\Sdr24Adc17.DRL
+
+Tool         Hole Size          Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        20mil (0.508mm)          44               26.58 Inch (675.14 mm)
+T2        32mil (0.8128mm)         324              74.74 Inch (1898.49 mm)
+T3        52mil (1.3208mm)         28               17.53 Inch (445.35 mm)
+T4        62mil (1.5748mm)         12               5.79 Inch (147.01 mm)
+T5        75mil (1.905mm)          12               5.69 Inch (144.58 mm)
+T6        100mil (2.54mm)          3                10.51 Inch (267.00 mm)
+T7        120mil (3.048mm)         6                18.36 Inch (466.43 mm)
+T8        156mil (3.9624mm)        4                9.15 Inch (232.40 mm)
+---------------------------------------------------------------------------
+Totals                             433              168.36 Inch (4276.41 mm)
+
+Total Processing Time : 00:00:00

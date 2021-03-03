@@ -8,6 +8,8 @@ gerber - Gerber files to make the PCB. The board is 4 layers with a size of 5.5 
 
 hexfiles - Contains the hex files that need to be flashed onto the DspPic CPU.
 
+html - Copy of my PSN-ADC24 web page folder at https://www.seismicnet.com/psnadc24/.
+
 schematic - Schematics of the board.
 
 src - Source code files.

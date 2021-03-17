@@ -2,7 +2,7 @@ Building and testing the PSN-ADC24 board.
 
 1. Solder the parts onto the board. Use a socket for the dsPIC30F3014 microcontroller. You will need to deal with 5 SMD parts, the 4 ADC chips and the USB interface IC. A bill of materials can be found in the BOM folder.
 
-2. Before placing the dsPIC30F3014 into the socket you will need to flash the bootloader onto the chip. This is done with a programmer that can flash 40-pin dsPIC30F3014 parts. I use one made by ME Labs, Inc. I have their older serial version but their U2 USB Programmer should work. The file to flash is sdr24boot.hex that can be found in hexfile folder.
+2. Before placing the dsPIC30F3014 into the socket you will need to flash the bootloader onto the chip. This is done with a programmer that can flash 40-pin dsPIC30F3014 parts. I use one made by ME Labs, Inc. I have their older serial version but their U2 USB Programmer should work. The file to flash is sdr24boot.hex that can be found in hexfiles folder.
 
 3. Once you have the bootloader loaded onto the CPU you can place it into the 40-pin socket and power up the board. You will need a 7VDC to 20VDC power supply. A 12VDC power supply with 500ma or more current is perfect to run the board.
 
@@ -17,7 +17,7 @@ Building and testing the PSN-ADC24 board.
 
 5. When you apply power for the first time the LED should come on. This indicates that the microcontroller is running and ready to receive the firmware.
 
-6. Use the DspBoot.exe program, this can be found in the hexfile folder, to flash the firmware onto the dsPIC CPU. You will need to run the DspBoot program using a command line window. Make sure that you have SW5 and SW6 set to the correct positions depending on if you will be using the USB or RS-232 interface. This file Sdr24AdcV25.hex is the current firmware for the board. The DspBoot program only needs three input parameters, -p, the port number and the firmware file. 
+6. Use the DspBoot.exe program, this can be found in the hexfiles folder, to flash the firmware onto the dsPIC CPU. You will need to run the DspBoot program using a command line window. Make sure that you have SW5 and SW6 set to the correct positions depending on if you will be using the USB or RS-232 interface. This file Sdr24AdcV25.hex is the current firmware for the board. The DspBoot program only needs three input parameters, -p, the port number and the firmware file. 
     Example: DspBoot -p 1 Sdr24AdcV25.hex
 
 7. If the flashing of the firmware worked correctly the LED should start to blink after DspBoot toggles the reset line.
